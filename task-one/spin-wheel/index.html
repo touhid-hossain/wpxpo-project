@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucky Wheel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Spin wheel 1st part -->
+      <div class="spin_1st_part">
+        <!-- Spin Wheel -->
+        <div class="wheel">
+          <canvas class="" id="canvas" width="500" height="500"></canvas>
+          <div class="triangle"></div>
+          <div class="center-circle"></div>
+        </div>
+
+        <button class="spin_btn" onclick="spin()">Spin it!</button>
+      </div>
+
+      <!-- Spin wheel 2nd part -->
+      <div class="spin_2nd_part">
+        <div class="inputArea" onchange="createWheel()">
+          <textarea rows="20" cols="30" >cat
+dog
+cow
+duck
+sheepgoat
+bird
+neko
+chicken</textarea>
+          
+        </div>
+
+        <!-- Winner div -->
+        <div class="winner_div">
+          <h1 id="winner">None</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
